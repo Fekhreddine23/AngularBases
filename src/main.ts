@@ -46,11 +46,12 @@ class AppComponent{}
 @Component({
   selector:'app-nav',
   template: `
-   <ul>
-     <li>A</li>
-     <li>B</li>
-     <li>C</li>
-   </ul>
+  <div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href="#news"> News </a>
+  <a href="#contact"> Contact </a>
+  <a href="#about"> About </a>
+  </div>
   `
 })
 class MainComponent{}
