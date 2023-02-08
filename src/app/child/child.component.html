@@ -1,0 +1,37 @@
+
+<!--
+
+EXERCICE COMMUNICATION INTER COMPOSANTS
+
+Créer 2 composants: Child et Parent
+Child devra contenir 2 boutons (plus et moins)
+Parent devra afficher un compteur (initialisé à zéro)
+
+Quand on clique sur le bouton plus, le compteur est incrémenté
+Quand on clique sur le bouton moins, le compteur est décrémenté
+
+
+Pour ceux qui veulent décortiquer:
+1- Créer les 2 composants
+2- Intégrer le composant Parent dans la vue du composant racine
+3- Créer un compteur avec une valeur en dure et l'afficher dans le parent
+4- Créer 2 boutons dans la vue de l'enfant et écouter le clic sur chacun d'eux
+5- Au clic sur un bouton, afficher en console un petit message
+6- Créer un émetteur pour l'incrémentation du compteur (qu'il faudra déclencher au clic sur le bouton correspondant)
+7- Faire pareil pour la décrémentation
+8- Détecter les 2 événement depuis le parent et mettre à jour le compteur du parent en fonction de l'évènemeent déclenché
+
+
+
+-->
+
+
+
+
+<p>child works!</p>
+
+<!--Child devra contenir 2 boutons (plus et moins) -->
+<div>
+    <button (click)="decrement()">-</button> <!--au click je declenche evenement-->
+    <button (click)="increment()">+</button>
+</div>

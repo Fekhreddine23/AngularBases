@@ -1,0 +1,19 @@
+import { Component, Input } from '@angular/core';
+
+@Component({
+  selector: 'app-book-details',
+  templateUrl: './book-details.component.html',
+  styleUrls: ['./book-details.component.css']
+})
+export class BookDetailsComponent {
+ 
+/* valeurs par defaut*/ 
+@Input()
+bookFromParentsInfos = {
+  detail : "",
+  author: "",
+  title: "",
+  description: ""
+}
+
+}
