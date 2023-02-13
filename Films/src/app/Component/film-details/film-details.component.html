@@ -1,0 +1,17 @@
+
+
+
+<div class="detailFilm">
+
+<h3>Détails du film</h3>
+<h4>{{ selected?.title }}</h4>
+
+<div *ngIf="selected">
+  <p>{{ selected.description |slice:0:10 }}...</p>
+  <hr>
+  <p>
+    <strong>Annee:</strong> {{ selected.releaseYear }}
+  </p>
+</div>
+
+</div>

@@ -1,0 +1,14 @@
+<div class="d-flex justify-content-center">
+    <app-movie-form></app-movie-form>
+  </div>
+
+
+<div class="films">
+
+<h2> Videotheque</h2>
+<app-film-list (filmEmitter)="selected = $event"
+[films]="films"> 
+</app-film-list>
+
+<app-film-details [selected]="selected"></app-film-details>
+</div>
