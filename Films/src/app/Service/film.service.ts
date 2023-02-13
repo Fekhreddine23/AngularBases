@@ -1,12 +1,22 @@
 import { Injectable } from '@angular/core';
 
 
+
+/** j'ai défini l'interface Film pour décrire la structure d'un film.*/
+export interface Film {
+  id: number;
+  title: string;
+  description: string;
+  releaseYear: number;
+}
+
+
 @Injectable({
     providedIn: 'root' //injectable root au niveau du service
 
   })
   export class FilmService {
-    public films = [
+    public films:  Film[] = [
       {
         id: 1,
         title: 'The Shawshank Redemption',
@@ -27,4 +37,16 @@ import { Injectable } from '@angular/core';
       }
     ]
   
+
+    /**   methode ajout et delete films */
+
+
+    addFilm(film: Film) {
+      this.films.push(film);
+    }
+  
+    deleteFilm(film: Film) {
+      const index = this.films.indexOf(film);
+      this.films.splice(index, 1);
+    }
 }

@@ -8,6 +8,7 @@
                 <div>
                     <img src=" " class="card-img-top" alt="{{film.titre}}">
                     {{film.title }} ({{ film.description }} {{ film.releaseYear }})
+                    <button (click)="OnDelete(film) ">Delete</button> <!-- jappel methd Ondelete du component.ts-->
 
                 </div>
             </div>
