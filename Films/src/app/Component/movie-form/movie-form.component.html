@@ -1,14 +1,20 @@
-<form>
-    <input
+<form #formAddMovie=""ngForm>
+    <input 
+      ngModel
+      name="title"
       type="text"
       placeholder="Titre du film"
       autocomplete="off">
     <textarea 
+      ngModel
+      name="desc"
       cols="30"
       rows="10"
       placeholder="Description du film"
       autocomplete="off"></textarea>
     <input
+      ngModel
+      name="img"
       type="text"
       placeholder="Lien de la jacket du film">
     <button type="submit">Ajouter</button>
